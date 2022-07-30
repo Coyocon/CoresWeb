@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Core</title>
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/core.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head> 
+<body>
+    <header>
+        <nav class=" navbar navbar-expand-xl  navbar-light   box-shadow mb-3 col-xl-11 " style="background-color:#BE0F34; padding:0; margin:auto;">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" href="../layaout.html"><img src="../img/logo.png" style="height:4rem;"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end menus" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color:#BE0F34; width: 20rem; ">
+                    <div class="offcanvas-header ">
+                        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav flex-grow-1 " style="padding:0.1rem; " >
+                        <!--NOSOTROS-->
+                       <li class="nav-item col-xl-2   border-xl-right border-xl-left border-light dropdown menu" >
+                            <a class="nav-link text-white " role="button" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="Index" href="#" >Nosotros</a>
+                            <div class="dropdown-menu submenu submenu-xl-width " aria-labelledby="navbarDropdownMenuLink" >
+                                <a class="dropdown-item text-center" href="#">Información Institucional</a>
+                                <div class="dividir" ></div>
+                                <a class="dropdown-item text-center" href="#">Plan de Desarrollo </br>Institucional PDA 2022</a>
+                                <div class="dividir" ></div>
+                                <a class="dropdown-item text-center" href="#">Aliados Institucionales</br> y Vinculaciones</a>
+                                <div class="dividir" ></div>
+                                <a class="dropdown-item text-center" href="#">Organigrama Institucional</a>
+                            </div>
+                       </li>
+                        <!--PROGRAMAS Y SERVICIOS-->
+                       <li class="nav-item col-xl-2 border-xl-right  border-light menu dropdown "  >
+                            <a class="nav-link text-white" role="button" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="Index" href="#">Programas y Servicios</a>
+                            <div class="dropdown-menu submenu submenu-xl-width "  aria-labelledby="navbarDropdownMenuLink" >
+                                <a class="dropdown-item text-center" href="/Prog-Serv/CCAYO.html">Centro Cultural, Artístico</br> y de Ocio. (CCAYO)</a>
+                                <div class="dividir" ></div>
+                                <a class="dropdown-item text-center" href="#">Centro de Atención </br> Psicológica (PSICORES)</a>
+                                <div class="dividir" ></div>
+                                <a class="dropdown-item text-center" href="#">Centro de Entrenamiento </br>y Nutrición (RETO)</a>
+                                <div class="dividir" ></div>
+                                <a class="dropdown-item text-center" href="#">Centro de Investigación, </br>Rescate y Conservación de </br>Fauna Silvestre Campeche</a>
+                            </div>
+                       </li>
+                        <!--CONVOCATORIAS Y VINCULACIÓN-->
+                       <li class="nav-item col-xl-2 border-xl-right  border-light menu dropdown " >
+                            <a class="nav-link text-white"  role="button" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="Index" href="#">Convocatoria y Vinculacion</a>
+                            <div class="dropdown-menu submenu submenu-xl-width" aria-labelledby="navbarDropdownMenuLink" >
+                                <a class="dropdown-item text-center" href="#">Convocatoria Laboratorio de</br> Desarrollo de Habilidades</br> Profesionales </a>
+                                <div class="dividir" ></div>
+                                <a class="dropdown-item text-center" href="#">Convocatoria Únete +</a>
+                                <div class="dividir" ></div>
+                                <a class="dropdown-item text-center" href="#">Bolsa de Trabajo y Vacantes </a>
+                                <div class="dividir" ></div>
+                                <a class="dropdown-item text-center" href="#">Solicitud de Cortesias y </br>Descuentos para Empresas</br> e Instituciones Públicas</a>
+                            </div>
+                       </li>
+                        <!--CUENTAS CLARAS-->
+                       <li class="nav-item col-xl-2 border-xl-right  border-light menu dropdown"  >
+                            <a class="nav-link text-white " role="button" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="Index" href="#">Cuentas Claras</a>
+                            <div class="dropdown-menu submenu submenu-xl-width " aria-labelledby="navbarDropdownMenuLink" >
+                                <a class="dropdown-item text-center" href="#">Aviso de Privacidad y</br> Uso de Datos Personales </a>
+                                <div class="dividir" ></div>
+                                <a class="dropdown-item text-center" href="../cuentas_claras/info.html">Informes y Estados de Cuenta</a>
+                            </div>
+                       </li>
+                        <!--CONTACTANOS-->
+                       <li class="nav-item col-xl-2 border-xl-right  border-light menu dropdown" >
+                            <a class="nav-link text-white"role="button" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="Index" href="#">Contactanos</a>
+                            <div class="dropdown-menu submenu submenu-xl-width" aria-labelledby="navbarDropdownMenuLink" >
+                                <a class="dropdown-item text-center" href="/contacto/Localiza.html">Localizar mi Centro Cores</a>
+                                <div class="dividir" ></div>
+                                <a class="dropdown-item text-center" href="#">Solicita Información</a>
+                            </div>
+                       </li>
+                        <!--PORTAL SDI-->
+                       <li class="nav-item col-xl-2 menu" >
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index" href="#">Portal SDI</a>
+                       </li>
+                                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+     
+    <div class="container-fluid">
+        <main role="main" class="pb-4">
+            <div class=" col-11 row mx-auto">
+                
+                <div class="col-lg-6 col-sm-12 my-auto ">
+                    <h2>Estados de Cuentas</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A magni alias inventore cupiditate ipsam repellendus? Sint eaque, necessitatibus eos ipsa amet repudiandae maiores maxime?</p>
+                    <a  href="../pdf/Cores.pdf" type="button" class="btn btn-danger" download="Cuentas.pdf" >Descargar</a>
+                    
+                    
+                    
+                </div>
+                <div class="col-lg-6 col-sm-12  mt-4 d-none d-lg-block " >
+                    <embed src="../pdf/Cores.pdf#toolbar=0&navpanes=0&scrollbar=0" width="60%" type="application/pdf" class="rem " />
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 -  <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
