@@ -22,8 +22,22 @@
     align-items: center;
 
 }
-    
 
+
+  .notice::-webkit-scrollbar {
+    position: absolute;
+    height: 5px;
+   
+  }
+  .notice::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+ 
+    background-color: #8d8989;
+    
+  }
+  .notice::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,0,0,0); 
+   }
 
 @media (min-width: 576px) {
     .rem{
