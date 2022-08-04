@@ -39,6 +39,14 @@
     background: rgba(255,0,0,0); 
    }
 
+   .linea {
+    border-top: 2px solid #BE0F34;
+   
+    max-width: 100%;
+    padding: 0;
+    margin: 1vh auto 2vh auto;
+  }
+
 @media (min-width: 576px) {
     .rem{
         height: 53rem;
