@@ -29,7 +29,7 @@
                        <li class="nav-item col-xl-2   border-xl-right border-xl-left border-light dropdown menu" >
                             <a class="nav-link text-white " role="button" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="Index" href="#" >Nosotros</a>
                             <div class="dropdown-menu submenu submenu-xl-width col-12" aria-labelledby="navbarDropdownMenuLink" >
-                                <a class="dropdown-item text-center text-wrap" href="/nosotros/Institucional.html">Información Institucional</a>
+                                <a class="dropdown-item text-center text-wrap" href="nosotros/Institucional.html">Información Institucional</a>
                                 <div class="dividir" ></div>
                                 <a class="dropdown-item text-center text-wrap" href="#">Plan de Desarrollo Institucional PDA 2022</a>
                                 <div class="dividir" ></div>
@@ -42,7 +42,7 @@
                        <li class="nav-item col-xl-2 border-xl-right  border-light menu dropdown "  >
                             <a class="nav-link text-white" role="button" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="Index" href="#">Programas y Servicios</a>
                             <div class="dropdown-menu submenu submenu-xl-width col-12 "  aria-labelledby="navbarDropdownMenuLink" >
-                                <a class="dropdown-item text-center text-wrap" href="/Prog-Serv/CCAYO.html">Centro Cultural, Artístico y de Ocio. (CCAYO)</a>
+                                <a class="dropdown-item text-center text-wrap" href="Prog-Serv/CCAYO.html">Centro Cultural, Artístico y de Ocio. (CCAYO)</a>
                                 <div class="dividir" ></div>
                                 <a class="dropdown-item text-center text-wrap" href="#">Centro de Atención Psicológica (PSICORES)</a>
                                 <div class="dividir" ></div>
@@ -70,14 +70,14 @@
                             <div class="dropdown-menu submenu submenu-xl-width col-12" aria-labelledby="navbarDropdownMenuLink" >
                                 <a class="dropdown-item text-center text-wrap" href="#">Aviso de Privacidad y Uso de Datos Personales </a>
                                 <div class="dividir" ></div>
-                                <a class="dropdown-item text-center text-wrap" href="/cuentas_claras/info.html">Informes y Estados de Cuenta</a>
+                                <a class="dropdown-item text-center text-wrap" href="cuentas_claras/info.html">Informes y Estados de Cuenta</a>
                             </div>
                        </li>
                         <!--CONTACTANOS-->
                        <li class="nav-item col-xl-2 border-xl-right  border-light menu dropdown" >
                             <a class="nav-link text-white"role="button" data-bs-toggle="dropdown" asp-area="" asp-controller="Home" asp-action="Index" href="#">Contactanos</a>
                             <div class="dropdown-menu submenu submenu-xl-width col-12" aria-labelledby="navbarDropdownMenuLink" >
-                                <a class="dropdown-item text-center text-wrap" href="/contacto/Localiza.html">Localizar mi Centro Cores</a>
+                                <a class="dropdown-item text-center text-wrap" href="contacto/Localiza.html">Localizar mi Centro Cores</a>
                                 <div class="dividir" ></div>
                                 <a class="dropdown-item text-center text-wrap" href="#">Solicita Información</a>
                             </div>
@@ -150,15 +150,21 @@
            
            </div>
            <div>
-            <form action="mailto:cesarcoyoc@gmail.com" method="post" name="form1">
-                <label for="nombre">Nombre: </label>
-                <input id="nombre" name="nombre" type="text" />
-                <label for="email">Email: </label>
-                <input id="email" name="nombre" type="text" />
-                ¿Qué te pareció la página?
-                <textarea id="opinion" name="opinion"></textarea>
-                <input name="Submit" type="submit" value="Enviar" />
-              </form>
+            <form method="post" action="enviar.php">
+
+                <label for="subject">Asunto</label>
+                <input type="text" name="subject" id="subject"><br>
+            
+                <label for="from">Correo</label>
+                <input type="text" name="from" id="from"><br>
+            
+                <label for="msg">Mensaje: </label>
+                <textarea name="msg" id="msg" cols="30" rows="10"></textarea><br>
+            
+                <input type="submit">
+            
+            </form>
+            
            </div>
 
            
