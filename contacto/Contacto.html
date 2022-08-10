@@ -109,25 +109,41 @@
 
 
 
-    <div class="mx-auto mt-3">
+    <div class="mx-auto mt-3 col-11 row">
         <h3>Contactanos</h3>
         <div class="linea col-12"></div>
-        <form method="post" action="https://formsubmit.co/cesarcoyoc@gmail.com">
+        <div class="col-6">
+            <h4>Datos de contacto</h4>
+            <br>
+            <h5>Correo</h5>
+            <p><a style="text-decoration: none ; color: black;" href="mailto:atencionalcliente@fundacioncores.org.mx">atencionalcliente@fundacioncores.org.mx</a></p>
+            <h5>Numero telefonico</h5>
+            <p><a style="text-decoration: none ; color: black;" href="tel:+529818164395">+52 981 816 4395</a></p>
+            
+            <button class="btn btn-success" ><a href="https://wa.me/529817518339/?text=Me%20Interesa%20"style="text-decoration: none; color: white;">Envianos un whatsapp <i class="bi bi-whatsapp"></i></a></button>
 
-            <label for="from">Nombre</label>
-            <input type="text" name="nombre" id="nombre"><br>
 
-            <label for="from">Correo</label>
-            <input type="text" name="email" id="from"><br>
+        </div>
         
-            <label for="msg">Mensaje: </label>
-            <textarea name="mesaje" id="msg" cols="30" rows="10"></textarea><br>
+        <div class="col-6" >
+            <form class="" method="post" action="https://formsubmit.co/cesarcoyoc@gmail.com">
+
+                <label for="from">Nombre:</label>
+                <input class="form-control" type="text " name="nombre" id="nombre"><br>
+    
+                <label for="from">Correo:</label>
+                <input class="mt-1 form-control" type="text" name="email" id="from"><br>
+            
+                <label for="msg">Mensaje: </label>
+                <textarea  class="mt-1 form-control"  name="mesaje" id="msg"  rows="5"></textarea><br>
+            
+                <button type="submit" class="btn btn-primary mb-3">Submit</button>
+            
+            </form>
+        </div>
         
-            <input type="submit">
         
-        </form>
-        
-       </div>
+    </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
